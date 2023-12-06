@@ -65,3 +65,61 @@ class loops:
             i = i - 1
 
         return result
+
+
+@staticmethod
+def computeMin(nums):
+    """Finds the minimum number is a specified list of numbers.
+
+    Args:
+        nums (nums): specified list
+
+    Returns:
+        int: minimum number
+    """
+
+    # the counter variable of the loop is the
+    # # index used to iterate through the elements in the list
+
+    # the loop will repeat as long as i < lens(nums)
+    # the condition that will cause the loop to stop
+    # is i == len(nums) -> stopping case for the loop
+
+    # the counter variable by 1    
+
+
+    i = 0
+    min = nums[i]
+    while (i < len(nums)):
+        if (nums[i] <= min):
+            min = nums[i]
+            i+=1
+
+    return min
+
+@staticmethod 
+def reverse(s: str):
+    """Displays a specified string in reverse.
+
+    Args:
+        s (str): specified string
+    """
+
+    # The counter variable in the loop is the index
+    #  used to iterate through the characters in the string 
+
+    # The stopping case for the loop is i == 0
+    
+
+    # with each iteration of the loop we're 
+    # decrementing the counter variable 
+
+    # when the loop stops we're printing a message 
+          
+    i = len(s)
+    while(i > 0):
+        print(s[i - 1], end="")
+        i -= 1
+    print(" is the reverse of %s using a loop." % (s))
+
+
